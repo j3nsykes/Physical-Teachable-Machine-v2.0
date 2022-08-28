@@ -25,8 +25,10 @@ In order to make it work with your trained data follow these steps.
 * Once training si complete, select Download Model and check the Arduino example box. 
 * In order to work with the Tiny Motion Trainer P5 example you need to make two changes to the Arduino template. This is so the data can be parsed correctly and set to P5JS. 
 
-1. Replace the model.h file with your own [insert GIF]
-2. Replace `lines 45 - 53` with the custom data from your downloaded .ino sketch [insert GIF]
+1. Replace the model.h file with your own 
+![Alt Text | height = 100px](https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/blob/main/modelCopyPaste.gif)
+2. Replace `lines 45 - 53` with the custom data from your downloaded .ino sketch 
+![Alt Text | height = 100px](https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/blob/main/settingscopypaste.gif)
 ``` 
 // Values from Tiny Motion Trainer
 #define MOTION_THRESHOLD 0.122
