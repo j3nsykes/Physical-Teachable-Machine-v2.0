@@ -64,7 +64,7 @@ Once you have trained your model you may want to save it then ***pre-load*** it 
 
 ***
 ## Acknowledgements and references:
-The code used in the examples above reference, adapt and expanded upon functionality from original sources by...
+The code used in the templates above reference work and methods by others in this area before. 
 * [Rebecca Fiebrink and Wekinator](http://www.wekinator.org/examples/)
 * [Teachable Machine v1.0 Andreas Refsgaard and Lasse Korsgaard](https://teachablemachine.withgoogle.com/v1/)
 * [Teachable Machine v2.0](https://teachablemachine.withgoogle.com/)
