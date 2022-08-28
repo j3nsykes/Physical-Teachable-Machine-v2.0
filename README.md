@@ -48,6 +48,7 @@ const char *GESTURES[] = {
 This is an updated P5JS sketch that utilises the ML5JS Neural Net function. It allows you to send any number of inputs to P5JS and train them. 
 This example no longer requires a template per different sensor; allowing changes to the settings variables to adapt to differring inputs. 
 
+[Physical teachable machine v2.0 in the P5JS web editor](https://editor.p5js.org/jen_GSA/sketches/7B1E88Uc4)
 <aside>
 💡 **Steps**
 
@@ -59,8 +60,6 @@ This example no longer requires a template per different sensor; allowing change
   [Example templates](https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/tree/main/ArduinoSketches) 
 6. That’s it ! Press run and connect your board. 
 </aside>
-
-[Physical teachable machine v2.0 in the P5JS web editor](https://editor.p5js.org/jen_GSA/sketches/7B1E88Uc4)
 
 Once you have trained your model you may want to save it then ***pre-load*** it to work with when developing the outputs. The ***[Physical Teachable Machine v2.0 pre-loaded model](https://editor.p5js.org/jen_GSA/sketches/8Em08TM5F)*** template helps you do this. 
 
