@@ -14,10 +14,11 @@ Make sure to turn on the [WebSerial API in Chrome](https://codelabs.developers.g
 ## Tiny Motion Trainer to P5JS
 Google’s Tiny Motion Trainer is a very powerful interface for training gestural data. However, it only captures the data (much like Teachable Machine) and if you want to do more with it you need to transfer the model data to other tools. There are a few directions you could go next after training the data.
 
-🔥 This template allows you to stream your trained model data back into P5JS so you can generate graphics, audio, images with your data. It is also a helpful visualisation tool.
+🔥 This template allows you to stream your trained model data back into P5JS so you can generate graphics, audio, images with your data. It is also a helpful visualisation tool.<br>
 [Tiny Motion Trainer Visualiser in the p5.js Web Editor](https://editor.p5js.org/jen_GSA/sketches/ZbPK2pFHB)
 
-In order to stream the trained data into P5JS we need to format the serial messages in Arduino. This template does this for you. [Arduino Create link]
+In order to stream the trained data into P5JS we need to format the serial messages in Arduino. 
+[This template does this for you.](https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/tree/main/ArduinoSketches/TinyMotionTrainer_toP5JS) 
 
 In order to make it work with your trained data follow these steps.
 * Follow the setup, labelling and training steps via [Tiny Motion Trainer](https://experiments.withgoogle.com/tiny-motion-trainer/view/settings)
@@ -42,3 +43,31 @@ const char *GESTURES[] = {
 
 ***
 ## Physical Teachable Machine v2.0
+This is an updated P5JS sketch that utilises the ML5JS Neural Net function. It allows you to send any number of inputs to P5JS and train them. 
+This example no longer requires a template per different sensor; allowing changes to the settings variables to adapt to differring inputs. 
+
+<aside>
+💡 **Steps**
+
+1. Select your type of input on line 15. There are some preset settings such as `TRILLCRAFT`, `ANALOG`, `CUSTOM`
+2. These settings dictate what the maximum data readings will be. You can also change the minimum reading of `0` if required here on line 20. `let dataRange = [0, TRILLCRAFT];`
+3. Select the number of inputs you are sending into the sketch on line 23: `const NUM_INPUTS = 24;`
+4. Change the labels to what you want them to be on line 24 `const LABLES = ["Square", "Circle", "Triangle"];`
+5. Make sure you have the correct Arduino sketch on your microcontroller for the type of sensor in use. If you are using a Trill Craft select that corresponding Arduino sketch. For all other inputs use the sensor array example sketch.
+  [Example templates](https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/tree/main/ArduinoSketches) 
+6. That’s it ! Press run and connect your board. 
+</aside>
+
+[Physical teachable machine v2.0 in the P5JS web editor](https://editor.p5js.org/jen_GSA/sketches/7B1E88Uc4)
+
+Once you have trained your model you may want to save it then ***pre-load*** it to work with when developing the outputs. The ***[Physical Teachable Machine v2.0 pre-loaded model](https://editor.p5js.org/jen_GSA/sketches/8Em08TM5F)*** template helps you do this. 
+
+***
+## Acknowledgements and references:
+The code used in the examples above reference, adapt and expanded upon functionality from original sources by...
+* [Rebecca Fiebrink and Wekinator](http://www.wekinator.org/examples/)
+* [Teachable Machine v1.0 Andreas Refsgaard and Lasse Korsgaard](https://teachablemachine.withgoogle.com/v1/)
+* [Teachable Machine v2.0](https://teachablemachine.withgoogle.com/)
+* [Dan Shiffman and The Coding Train](https://thecodingtrain.com/learning/ml5/)
+* [Golan Levin Media PipeLine examples](https://editor.p5js.org/golan/sketches)
+* [Bérenger Recoules](https://github.com/b2renger/workshop_ml_PCD2019)
