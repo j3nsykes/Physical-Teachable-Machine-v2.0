@@ -18,7 +18,7 @@ Google’s Tiny Motion Trainer is a very powerful interface for training gestura
 [Tiny Motion Trainer Visualiser in the p5.js Web Editor](https://editor.p5js.org/jen_GSA/sketches/ZbPK2pFHB)
 
 In order to stream the trained data into P5JS we need to format the serial messages in Arduino. 
-[This template does this for you.](https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/tree/main/ArduinoSketches/TinyMotionTrainer_toP5JS) 
+[This Arduino .ion template does this for you.](https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/tree/main/ArduinoSketches/TinyMotionTrainer_toP5JS) 
 
 In order to make it work with your trained data follow these steps.
 * Follow the setup, labelling and training steps via [Tiny Motion Trainer](https://experiments.withgoogle.com/tiny-motion-trainer/view/settings)
