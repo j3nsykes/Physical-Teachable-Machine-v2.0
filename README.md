@@ -22,8 +22,8 @@ This [Arduino .ino template](https://github.com/j3nsykes/Physical-Teachable-Mach
 
 In order to make it work with your trained data follow these steps.
 * Follow the setup, labelling and training steps via [Tiny Motion Trainer](https://experiments.withgoogle.com/tiny-motion-trainer/view/settings)
-* Once training si complete, select Download Model and check the Arduino example box. 
-* In order to work with the Tiny Motion Trainer P5 example you need to make two changes to the Arduino template. This is so the data can be parsed correctly and set to P5JS. 
+* Once training is complete, select Download Model and check the Arduino example box. 
+* In order to work with the Tiny Motion Trainer P5 example you need to make two changes to the Arduino template. This is so your trained data can be parsed correctly and sent via web serial to P5JS. 
 
 1. Replace the model.h file with your own 
 ![Alt Text | height = 100px](https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/blob/main/modelCopyPaste.gif)
