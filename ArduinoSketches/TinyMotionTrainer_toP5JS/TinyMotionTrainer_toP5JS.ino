@@ -48,7 +48,7 @@
 
 // Array to map gesture index to a name
 const char *GESTURES[] = {
-    "punch", "tap"
+    "Left", "Right"
 };
 
 
